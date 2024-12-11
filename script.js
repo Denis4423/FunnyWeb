@@ -5,7 +5,7 @@ document.getElementById("button").onclick = function () {
     score += 1;
     textContainer.textContent = score;
     localStorage.setItem('score', score);
-    if (score % 100 === 0) {
+    if (score % 100 === 0 && score != 0) {
         const jsConfetti = new JSConfetti();
 
         jsConfetti.addConfetti({
@@ -25,9 +25,12 @@ document.getElementById("button").onclick = function () {
 document.getElementById("button-r").onclick = function () {
     const textContainer = document.getElementById('score');
     score -= 1;
+    if (score <= 0) {
+        score = 0;
+    }
     textContainer.textContent = score;
     localStorage.setItem('score', score);
-    if (score % 100 === 0) {
+    if (score % 100 === 0 && score != 0) {
         const jsConfetti = new JSConfetti();
         jsConfetti.addConfetti({
             emojis: ['❤️', '🧡', '💛', '💚', '💙', '💜', '🤍'],
