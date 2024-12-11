@@ -1,0 +1,177 @@
+body {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/010/566/478/non_2x/colorful-donuts-sprinkled-with-sugar-seamless-pattern-gift-wrap-wallpaper-background-kawaii-doodle-flat-cartoon-illustration-vector.jpg);
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.button {
+  text-decoration: none;
+  display: block;
+  padding: 12px 40px;
+  margin: 10px 20px;
+  border-radius: 30px;
+  background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+  background-position: 100% 0;
+  background-size: 200% 200%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+  transition: .5s;
+}
+
+.button:hover {
+  box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+  background-position: 0 0;
+}
+
+.counter {
+  font-size: 30px;
+  background-color: antiquewhite;
+  width: 250px;
+  height: 40px;
+  justify-items: center;
+  margin: auto;
+  padding: auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.general {
+
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding: auto;
+  border: solid;
+  border-color: wheat;
+  border-width: 3px;
+  border-radius: 3px;
+  background-color: bisque;
+}
+
+.for-button {
+  justify-content: center;
+  margin: 10px;
+  padding: auto;
+  align-items: center;
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.easter a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 20%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: azure;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: none;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
